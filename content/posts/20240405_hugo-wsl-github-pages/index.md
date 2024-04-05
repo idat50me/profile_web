@@ -1,7 +1,6 @@
 ---
 title: "Hugo+WSL+GitHub Pagesでつくったページに引っ越した時の個人的メモ"
 date: 2024-04-05T22:47:50+09:00
-lastmod: 2024-04-05T22:49:50+09:00
 showLastmod: true
 draft: false
 toc: false
