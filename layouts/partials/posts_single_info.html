@@ -16,10 +16,8 @@
 		href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash
 		-}}</a> @ {{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local -}}]
 	{{- else if not (eq .Lastmod .Date ) -}}
-	&nbsp;[{{.Site.Params.initialPublish | default "Initial Published on : "}} {{ dateFormat
+	&nbsp;[{{.Site.Params.initialPublish | default "Last modified : "}} {{ dateFormat
 	.Site.Params.dateformNumTime .Lastmod.Local -}}]
-	{{- else -}}
-	{{ errorf "Lastmod is not found in Page Frontmatter or Lastmod is same as Date" }}
 	{{- end -}}
 	{{- end -}}
 </p>
