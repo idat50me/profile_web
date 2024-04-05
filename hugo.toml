@@ -38,32 +38,35 @@ expiryDate = ["expiryDate"]
 name = "idat_50me"
 about = "/"
 
-[taxonomies]
+# [taxonomies]
 # tag = "tags"
 # category = "categories"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
 
 [params]
 dateform = "Jan 2, 2006"
 dateformShort = "Jan 2"
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04 -0700"
-
 showLastmod = true
-
 # homeSubtitle = "CHANGE ME HOME SUBTITLE"
 # description = "CHANGE ME SITE DESCRIPTION"
 # images = [""]
 themeColor = "#494f5c"
-
 # footerCopyright = "CHANGE ME FOOTER COPYRIGHT"
 # bgImg = ""
 # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
-
 justifyContent = false
-
 relatedPosts = true
 code_copy_button = true
-
 homeSubtitlePrinter = true
 scrollToTop = true
 global_mathjax = false
@@ -78,6 +81,7 @@ shareSocial = true
 # pinnedSVGname = "pin"
 # descriptionInPosts= true
 # initialPublish = "Initally Posted on: "
+math = false
 
 [[params.socialLinks]]
 name = "x"
