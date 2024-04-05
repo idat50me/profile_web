@@ -5,7 +5,6 @@
 # Open Issue or Pull Request at https://github.com/1bl4z3r/hermit-V2
 
 baseURL = "http://idat50me.github.io/profile_web/"
-publishDir = "docs"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
 languageCode = "ja"
