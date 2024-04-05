@@ -72,6 +72,8 @@ sudo dpkg -i hugo_extended_X.XXX.X_linux-amd64.deb
 - workflow
 	- 有志が用意してくれたものを拝借2：[hugo.yml](https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml)
 	- これを`.github/workflows/pages.yml`として保存
+	- 環境変数を設定してタイムゾーンを`Asia/Tokyo`にしておくことを推奨
+		- 参考： https://de-milestones.com/github-action-current-date/
 - GitHub Pagesの設定
 	- リポジトリ内で Settings > Pages > Source を "GitHub Actions" に指定
 
