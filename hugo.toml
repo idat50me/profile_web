@@ -1,0 +1,105 @@
+# THIS IS AN EXAMPLE ON HOW YOU SHOULD CONFIGURE YOUR hugo.toml
+# See this hugo.toml in action at https://github.com/1bl4z3r/hermit-V2/blob/staging/hugo.toml
+# Example Site is Staging branch, acessible at https://github.com/1bl4z3r/hermit-V2/tree/staging
+# To see what each config does, refer to https://1bl4z3r.github.io/hermit-V2/en/posts/explaining-configs/
+# Open Issue or Pull Request at https://github.com/1bl4z3r/hermit-V2
+
+baseURL = "http://idat50me.github.io/profile_web/"
+publishDir = "docs"
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
+languageCode = "ja"
+theme = "hermit-v2"
+
+title = "※"
+
+# enableGitInfo = true
+
+pygmentsCodefences = true
+pygmentsUseClasses = true
+hasCJKLanguage = true
+
+rssLimit = 10
+copyright = "idat_50me 2024" # Effect rss only in Hermit-v2.
+enableEmoji = true
+
+#[services]
+#  [services.disqus]
+#    shortname = ''
+#  [services.googleAnalytics]
+#    id = ''
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[params.author]
+name = "idat_50me"
+about = "/"
+
+[taxonomies]
+# tag = "tags"
+# category = "categories"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04 -0700"
+
+showLastmod = true
+
+# homeSubtitle = "CHANGE ME HOME SUBTITLE"
+# description = "CHANGE ME SITE DESCRIPTION"
+# images = [""]
+themeColor = "#494f5c"
+
+# footerCopyright = "CHANGE ME FOOTER COPYRIGHT"
+# bgImg = ""
+# gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+
+justifyContent = false
+
+relatedPosts = true
+code_copy_button = true
+
+homeSubtitlePrinter = true
+scrollToTop = true
+global_mathjax = false
+readTime = false
+# readTimeSeparator = "CHANGE ME READ TIME"
+# legacyLayout = false
+shareSocial = true
+# googleTagManager = "GTM-XXXXXXXX"
+# tagSymbol = "#"
+# categorySymbol = "⊲"
+# pinned = "Pinned Posts"
+# pinnedSVGname = "pin"
+# descriptionInPosts= true
+# initialPublish = "Initally Posted on: "
+
+[[params.socialLinks]]
+name = "x"
+url = "https://twitter.com/idat_50me"
+
+[[params.socialLinks]]
+name = "misskey"
+url = "https://misskey.kyoupro.com/@idat_50me"
+
+[[params.socialLinks]]
+name = "github"
+url = "https://github.com/idat50me"
+
+[menu]
+
+[[menu.main]]
+name = "Posts"
+url = "posts/"
+weight = 10
+
+[[menu.main]]
+name = "About"
+url = "about-hugo/"
+weight = 20
