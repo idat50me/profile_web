@@ -43,6 +43,8 @@ about = "/"
 # category = "categories"
 
 [markup]
+[markup.tableOfContents]
+startLevel = 2
 [markup.goldmark]
 [markup.goldmark.extensions]
 [markup.goldmark.extensions.passthrough]

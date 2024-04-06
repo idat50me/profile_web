@@ -4,7 +4,7 @@ date: {{ .Date }}
 showLastmod: true
 draft: true
 toc: false
-mathjax: false
+math: false
 images:
 ---
 
