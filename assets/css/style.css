@@ -5,3 +5,11 @@ h2 {
 code {
   color: #eee !important;
 }
+
+.chroma .c1 {
+  color: #9f9a83 !important;
+}
+
+.chroma .cp {
+  color: #a1b3d5 !important;
+}

@@ -5,6 +5,5 @@ showLastmod: true
 draft: true
 toc: false
 math: false
-images:
 ---
 
