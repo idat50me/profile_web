@@ -59,6 +59,7 @@ dateformShort = "Jan 2"
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04 -0700"
 showLastmod = true
+avatarurl = "images/komeicon3.png"
 # homeSubtitle = "CHANGE ME HOME SUBTITLE"
 # description = "CHANGE ME SITE DESCRIPTION"
 # images = [""]
