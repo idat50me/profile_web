@@ -28,7 +28,7 @@ code {
 .link-card {
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  padding: 1.2em;
   margin: 1em 0.5em;
   background-color: #6a778d;
   border: solid 2px rgba(0, 0, 0, 0.15);
