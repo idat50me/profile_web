@@ -13,3 +13,9 @@ code {
 .chroma .cp {
   color: #a1b3d5 !important;
 }
+
+.content {
+  img {
+    object-fit: contain;
+  }
+}
