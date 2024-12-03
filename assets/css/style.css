@@ -19,3 +19,59 @@ code {
     object-fit: contain;
   }
 }
+
+/**
+ * hugo-linkcard
+ * https://rkd3.dev/post/linkcard/
+ */
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  margin: 1em 0.5em;
+  background-color: #6a778d;
+  border: solid 2px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  transition: 0.25s;
+}
+
+.link-card:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+.link-card-title {
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-card-hostname {
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-card-hostname-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.link-card-hostname-img img {
+  max-height: 100%;
+  width: auto;
+  margin-right: 1em;
+}
+
+.link-card-hostname span {
+  font-size: 0.9em;
+}
+
+/* end hugo-linkcard */
