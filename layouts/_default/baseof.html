@@ -17,12 +17,12 @@
 	{{ printf `
 	<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Title | safeHTML }}
 	{{ end -}}
-	{{ $styles := resources.Get "css/style.css" | minify }}
-	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 	{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify |
 	fingerprint -}}
 	<link rel="stylesheet dns-prefetch preconnect preload prefetch" as="style" href="{{ $style.Permalink }}" {{
 		printf "integrity=%q" $style.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
+	{{ $styles := resources.Get "css/style.css" | minify }}
+	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 	{{- range .Params.custom_css -}}
 	{{ $c_css := resources.Get . | resources.ExecuteAsTemplate "css/style.css" $rootCtx | toCSS | minify | fingerprint
 	-}}

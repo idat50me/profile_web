@@ -12,10 +12,10 @@
 		{{- end -}}
 		{{- end -}}
 
-		<img src="{{ $src }}" {{- if or (.Get "alt" ) (.Get "caption" ) }} alt="{{ with .Get " alt" }}{{ . }}{{ else
-			}}{{ .Get "caption" | markdownify| plainify }}{{ end }}" {{- end -}} {{- with .Get "width" }}
-			width="{{ . }}" {{ end -}} {{- with .Get "height" }} height="{{ . }}" {{ end -}} {{- with .Get "loading" }}
-			loading="{{ . }}" {{ end -}} /><!-- Closing img tag -->
+		<img src="{{ $src }}" {{- if or (.Get "alt" ) (.Get "caption" ) }} alt='{{ with .Get "alt" }}{{ . }}{{ else
+			}}{{ .Get " caption" | markdownify| plainify }}{{ end }}' {{- end -}}
+			style='{{- with .Get "width"}}width:{{ . }};{{ end -}} {{- with .Get "height" }}height:{{ . }} !important;{{ end -}}'
+			{{- with .Get "loading" }} loading="{{ . }}" {{ end -}} /><!-- Closing img tag -->
 		{{- if .Get "link" }}</a>{{ end -}}
 	{{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
 	<figcaption>
