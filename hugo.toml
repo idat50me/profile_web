@@ -43,15 +43,16 @@ about = "/"
 # category = "categories"
 
 [markup]
-[markup.tableOfContents]
-startLevel = 2
-[markup.goldmark]
-[markup.goldmark.extensions]
-[markup.goldmark.extensions.passthrough]
-enable = true
-[markup.goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)']]
+	[markup.tableOfContents]
+	startLevel = 2
+	[markup.goldmark]
+		[markup.goldmark.extensions]
+		footnote = true
+			[markup.goldmark.extensions.passthrough]
+			enable = true
+				[markup.goldmark.extensions.passthrough.delimiters]
+				block = [['\[', '\]'], ['$$', '$$']]
+				inline = [['\(', '\)']]
 
 [params]
 dateform = "Jan 2, 2006"
@@ -86,26 +87,26 @@ shareSocial = true
 # initialPublish = "Initally Posted on: "
 math = false
 
-[[params.socialLinks]]
-name = "x"
-url = "https://twitter.com/idat_50me"
+	[[params.socialLinks]]
+	name = "x"
+	url = "https://twitter.com/idat_50me"
 
-[[params.socialLinks]]
-name = "misskey"
-url = "https://misskey.kyoupro.com/@idat_50me"
+	[[params.socialLinks]]
+	name = "misskey"
+	url = "https://misskey.kyoupro.com/@idat_50me"
 
-[[params.socialLinks]]
-name = "github"
-url = "https://github.com/idat50me"
+	[[params.socialLinks]]
+	name = "github"
+	url = "https://github.com/idat50me"
 
 [menu]
 
-[[menu.main]]
-name = "Posts"
-url = "posts/"
-weight = 10
+	[[menu.main]]
+	name = "Posts"
+	url = "posts/"
+	weight = 10
 
-# [[menu.main]]
-# name = "About"
-# url = "about-hugo/"
-# weight = 20
+	# [[menu.main]]
+	# name = "About"
+	# url = "about-hugo/"
+	# weight = 20
