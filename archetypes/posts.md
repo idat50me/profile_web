@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-showLastmod: true
+showLastmod: false
 draft: true
 toc: false
 math: false

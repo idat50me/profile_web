@@ -1,7 +1,7 @@
 ---
 title: "順列 \\(P\\) における操作 \\(P_i \\to P_{P_i}\\) (ABC377-E)"
 date: 2024-11-20T22:29:37+09:00
-showLastmod: true
+showLastmod: false
 draft: false
 toc: false
 math: true
