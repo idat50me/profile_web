@@ -24,6 +24,16 @@ code {
   }
 }
 
+.post-nav {
+  .next-post {
+    padding-right: 25px;
+  }
+
+  .prev-post {
+    padding-left: 25px;
+  }
+}
+
 /**
  * hugo-linkcard
  * https://rkd3.dev/post/linkcard/
