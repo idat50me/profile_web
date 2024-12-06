@@ -11,7 +11,8 @@
 	<meta name="author" content="{{ $author }}">
 	{{- with .Page.Params.description | default .Site.Params.description -}}
 	<meta name="description" content="{{.}}">{{- end -}}
-	{{- partial "structured-data.html" . -}}
+	{{- partial "structure-extra.html" . -}}
+	{{- partial "webschema.html" . -}}
 	<title>{{.Title}}</title>
 	{{ range .AlternativeOutputFormats -}}
 	{{ printf `
@@ -62,6 +63,7 @@
 		crossorigin="anonymous"></script>
 	{{- end }}
 	{{- partial "mathjax.html" . -}}
+	{{- partial "mermaid.html" . -}}
 	{{- if templates.Exists "partials/extra-foot.html" -}}{{- partial "extra-foot.html" . -}}{{- end }}
 </body>
 

@@ -18,6 +18,8 @@
 	{{- else if not (eq .Lastmod .Date ) -}}
 	&nbsp;[{{.Site.Params.initialPublish | default "Last modified : "}} {{ dateFormat
 	.Site.Params.dateformNumTime .Lastmod.Local -}}]
+	{{- else -}}
+	{{ errorf "Lastmod is not found in Page Frontmatter or Lastmod is same as Date" }}
 	{{- end -}}
 	{{- end -}}
 </p>

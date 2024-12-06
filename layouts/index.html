@@ -28,7 +28,7 @@
 {{- if (or .Site.Params.images .Site.Params.bgImg) }}
 <div class="bg-img"></div>
 {{- end }}
-<div id="spotlight" class="animated fadeIn">
+<div id="spotlight" {{- if ne false .Site.Params.usesAnimation }} class="animated fadeIn" {{- end -}}>
 	<div id="home-center">
 		{{ with .Site.Params.avatarurl }}
 		<div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
@@ -38,7 +38,7 @@
 		<p id="home-subtitle">{{.}}</p>
 		{{- end }}
 		{{- with .Site.Params.socialLinks }}
-		<div id="home-social">
+		<div id="home-links">
 			{{ partialCached "social-icons.html" . }}
 		</div>
 		{{- end }}
